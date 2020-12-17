@@ -1,14 +1,283 @@
 <!doctype html>
 
-<html>
-  <head>
-    <title>INSERT TITLE HERE!</title>
-    <link rel="stylesheet" href="index.css">
-    <!-- TODO: add additional links here! e.g. fonts, icons, more stylesheets, etc. -->
-    <meta content="width=device-width, initial-scale=1" name="viewport" />
-  </head>
+<html lang="en">
 
-  <body>
-    <!-- TODO: put your HTML code here! -->
-  </body>
+<head>
+  <title>Development Project</title>
+
+  <!-- Bootstrap CSS from online quickstart-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+
+  <link rel="stylesheet" href="index.css">
+  <!-- TODO: add additional links here! e.g. fonts, icons, more stylesheets, etc. -->
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+</head>
+
+<body>
+  <!-- TODO: put your HTML code here! -->
+
+  <div class="jumbotron text-center">
+    <h1>Developing a React App</h1>
+  </div>
+
+  <!-- NavBar -->
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="#About">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#Product">Product</a></li>
+        <li class="nav-item"><a class="nav-link" href="#DataCollect">Data Collection</a></li>
+        <li class="nav-item"><a class="nav-link" href="#Conclusion">Conclusion</a></li>     
+      </ul>
+    </div>  
+  </nav>
+
+  <!-- <div class="mainbody container-fluid"> -->
+
+    <div class="Content container-fluid" id="About">
+      <div class="section row">
+        <h1>About</h1>
+        <div class="p">
+          This project is a simple exercise in creating a React App.
+          It allowed me to play and learn the React language for the first time.
+          <br>
+          In this project, I created an Electoral Vote Counter because this 
+          project was made around the time of the 2020 election.
+          I wanted to create a fun tool that would allow election watchers 
+          to play with the states and predictions as they watch the votes
+          come in.
+          <br>
+          This tool handles all the math for the user, and is also 
+          meant to be a calming, non-partisan website that would allow 
+          users to avoid the stress of the news.
+          <br>
+          I hope you enjoy reading it; a lot of love was put into this piece. &#128522;
+        </div>
+      </div>
+    </div>
+
+    <div class="Content container-fluid" id="Product">
+      <div class="section row">
+        <h1>The Product Design</h1>
+      </div>
+
+      <div class="section row">
+        <h2>Goal</h2>
+        <div class="p">
+          This electoral counter tool is meant to be an efficient way of 
+          following along with the election without needing a calculator by 
+          your side and without needing to resort to news media to count for you.
+          This non-partisan website features states displayed in cards, 
+          with regional and political information, along with the number 
+          of electoral votes the state holds. 
+          <br><br>
+          A user can filter the states based on region and political leaning, 
+          and sort the states based on number of electoral votes. 
+          They can also add these states to their vote counter, which will 
+          automatically tally up the votes of all the states the user adds. 
+          <br>
+          <div class="imgwrapper">
+            <img src="filtersgif.gif" class="gif" alt="GIF Showing Filters">
+          </div> 
+          <br>
+          Users can, for example, choose to add all red or all blue states, 
+          and then add any combination of swing states to see what the total is
+          and what states their candidate needs to win to achieve what 
+          number of vote counts.
+          <br><br>
+          This tool can also be used to give users a better understanding of the 
+          electoral college. From playing with this site, users can also 
+          see the power of swing states, and if any regions of the US 
+          have a more homogenous political leaning.
+        </div>
+      </div>
+
+      <div class="section row">
+        <h2>Enhancing Usability</h2>
+        <div class="p">
+          For each website, I chose to emphasize a different aspect of the 
+          shopping experience. 
+        </div>
+      </div>
+      
+      <div class="section row">
+          <div class="insidecol col">
+            <div class="p">
+              In <b>version A</b>, I emphasized the process of purchasing. 
+              For each item, I put the price at the top of the section in 
+              very large font, and highlighted how many were already in the cart 
+              to the immediate right of the item. 
+              I also moved the cart to the top of the screen, so users could 
+              easily see how many items were in their cart also. 
+              In making these changes, I wanted the user to easily access 
+              and see how much they are paying and how many items they are paying 
+              for. 
+            </div>
+          </div>
+          <!-- <br><br> -->
+          <div class="insidecol col">
+            <div class="p ">
+              In <b>version B</b>, I emphasized the shopping experience.
+              I increased the image size for all the items, increased the size 
+              of the "Add to Cart" button, sort of hid the prices, and placed the 
+              cart at the bottom of the page. 
+              In making these changes, I wanted the user to be more immersed in the 
+              items themselves and thinking about adding that item to their 
+              collection when they "add to cart", and divert attention away from 
+              prices and numbers.
+            </div>
+          </div>
+        
+      </div>
+
+      <div class="section row">
+        <h2>Version A</h2>
+        <div class="p">
+          <div class="imgwrapper">
+            <img src="version A.png" class="absite" alt="Version A of website">
+          </div> 
+        </div>
+        <h2>Version B</h2>
+        <div class="p">
+          <div class="imgwrapper">
+            <img src="version B.png" class="absite" alt="Version B of website">
+          </div> 
+        </div>
+      </div>
+
+      <!-- insert screenshots here -->
+
+      <div class="section row">
+        <h2>Product for Each Metric &#x1f9d0;</h2>
+        <div class="p">
+          <u>Metric 1: Time to Completion</u>
+          <br> 
+          Null Hypothesis: Version A will not lead to a faster time to completion 
+          than Version B.
+          <br>
+          Alternative Hypothesis: Versiona A will lead to a faster time to 
+          completion than Version B.
+          <br>
+          Reasoning: Version A will produce a more seamless experience with 
+          the user by having the important information (cost) easily visible 
+          to the average user that must work around a budget.
+          <br><br>
+          <u>Metric 2: Return Rate</u> 
+          <br>
+          Null Hypothesis: Version A will not lead to a lower return rate
+          than Version B.
+          <br>
+          Alternative Hypothesis: Version A will lead to a lower return rate 
+          than Version B.
+          <br>
+          Reasoning: Version A will lead to an experience that emphasizes the 
+          numbers first, so users will be more conscious of their purchases
+          and less likely to need to go back once they reach the cart, because 
+          there should not be anything surprising to them once they reach it.
+        </div>
+      </div>
+
+      <div class="note row">
+        <div class="pnote">
+          Aside: Personally, I have always found shopping websites that 
+          obscured the prices to feel almost distrustful. I would take longer 
+          to try to find the price, and also would wonder if making this 
+          purchase was reasonable if it feels like even the company 
+          would like you to forget how much it costs. 
+        </div>
+      </div>
+      
+    <!-- for the entire flex container    -->
+    </div>
+
+    <div class="Content container-fluid" id="DataCollect">
+      <div class="section row">
+        <h1>Data Collection</h1>
+        <div class="p">
+          For this test, the link, which had an equal chance of dispalying 
+          either version A or version B once clicked, was distributed 
+          over two days to over 20 of my peers in the class. 
+          Without knowing which version they received, they played the part 
+          of a typical user and used the site to add $150 worth of cacti 
+          products to their cart.
+          <br>
+          The data was logged through Heroku, cleaned and organized by hand, 
+          and run through a Python script.
+        </div>
+      </div>
+
+      <div class="note row">
+        <div class="comment">
+          Aside: Having access to these logs also made me realize what kind 
+          of data that the websites I visit must have one me. As I'm sure 
+          many people are familiar with online shopping, especially during 
+          the pandemic, this made me realize what specific numbers 
+          industries may be storing to gain insight on what interfaces 
+          encourage their users to purchase, and to return because they had 
+          a relatively seamless experience the first time.
+        </div>
+      </div>
+    </div>
+
+    <div class="Content container-fluid" id="Conclusion">
+      <div class="section row">
+        <h1>Conclusion</h1>
+          <div class="p">
+            <div class="imgwrapper">
+              <img src="infographic2.jpg" class="infographic" alt="Infographic of Experiment Results and Conclusion">
+            </div> 
+          </div>
+      </div>
+
+      <div class="section row">
+        <h2>Takeaways</h2>
+        <div class="p">
+          <ul class="takeaways">
+            <li>The sample size of A/B testing is very important in finding 
+              statistically significant results with small changes. 
+              After running this test, I feel like I have a better understanding 
+              of the advantage in resources that big industries have 
+              and how much harder it must be to collect data and improve your 
+              interface using A/B testing when there is low traffic to your site.
+            </li>
+            <li>Using statistical tests allows for a controlled method of 
+              evaluating results. From the data, I would personally have guessed
+              that version A had a lower return rate than version B, since 
+              only 1/3 of people returned to the main page in version A but 
+              1/2 of people returned to the main page in version B. However, 
+              with such a small sample, the p-value was much larger than 
+              0.05, and therefore I could not reject the null hypothesis.
+            </li>
+            <li>A/B testing reveals how metadata can be incredibly revealing 
+              about users and their experience with a website. 
+              For example, just seeing that the same user returned to a 
+              webpage quickly after leaving, or how long it took them to 
+              make their first click on the page actually reveals more than 
+              normal people might expect. 
+              This data is incredibly useful and powerful given how trivial 
+              it may seem at first.
+            </li>
+          </ul>
+
+          <br><br>
+          Thank you for reading &#x2764;
+        </div>
+      </div>
+        
+    </div>
+
+  </div>
+
+
+
+  <footer>Made for CSUIUX</footer>
+
+</body>
+
 </html>
