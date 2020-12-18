@@ -86,22 +86,17 @@ img {
     padding-bottom: 1rem;
     flex-shrink: 1;
     width: 100%;
-    background-color: red;
-    justify-content: center;
-    align-items: center;
-    
+    /* background-color: red; */
+    display: flex;
+    justify-content: center; /* align horizontal */
+    align-items: center; /* align vertical */
 }
 
 .gif {
     max-width: 500px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    display: table-cell;
-    vertical-align: middle
 }
 
-#Product {
+#Design {
     background-color: #dbf6e6;
 }
 
